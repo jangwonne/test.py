@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index page</title>
+</head>
+<body>
+    <h1>index</h1>
+    <p>{name}님 하이요</p>
+    <div>
+    <form action="/getdata/" method="post">
+        {% csrf_token %}
+        <input type="'text" name="todo"/>
+        <button type="submit">제출</button>
+    </div>
+    </form>
+</body>
+</html>
